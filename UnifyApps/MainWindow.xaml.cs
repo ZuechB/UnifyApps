@@ -63,12 +63,12 @@ namespace UnifyApps
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            var platform = new Platform();
-            platform.OnClicked += Platform_OnClicked;
-            platform.imgIcon.Source = new BitmapImage(new Uri("https://user-images.githubusercontent.com/819186/51553744-4130b580-1e7c-11e9-889e-486937b69475.png"));
-            platform.Title = "Slack";
-            platform.Url = "https://app.slack.com/client/";
-            spItems.Children.Add(platform);
+            //var platform = new Platform();
+            //platform.OnClicked += Platform_OnClicked;
+            //platform.imgIcon.Source = new BitmapImage(new Uri("https://user-images.githubusercontent.com/819186/51553744-4130b580-1e7c-11e9-889e-486937b69475.png"));
+            //platform.Title = "Slack";
+            //platform.Url = "https://app.slack.com/client/";
+            //spItems.Children.Add(platform);
 
             var platform2 = new Platform();
             platform2.OnClicked += Platform_OnClicked;
@@ -93,9 +93,9 @@ namespace UnifyApps
 
             var platform5 = new Platform();
             platform5.OnClicked += Platform_OnClicked;
-            platform5.imgIcon.Source = new BitmapImage(new Uri("https://helloraye.com/static/icons/logo.png"));
+            platform5.imgIcon.Source = new BitmapImage(new Uri("https://store-images.s-microsoft.com/image/apps.56560.fd6cc851-feab-42bf-8fc7-0caabb6dd238.cdfdf62d-493c-44b7-97a8-a4f5f6f6b957.a89f355d-c851-4e58-944e-81c1aa19e038.png"));
             platform5.Title = "Hello Raye";
-            platform5.Url = "https://helloraye.com";
+            platform5.Url = "https://app.clickup.com/";
             spItems.Children.Add(platform5);
 
             var platform6 = new Platform();
@@ -104,6 +104,13 @@ namespace UnifyApps
             platform6.Title = "Github";
             platform6.Url = "https://github.com";
             spItems.Children.Add(platform6);
+
+            var platform7 = new Platform();
+            platform7.OnClicked += Platform_OnClicked;
+            platform7.imgIcon.Source = new BitmapImage(new Uri("https://helloraye.com/static/icons/logo.png"));
+            platform7.Title = "Hello Raye Reports";
+            platform7.Url = "https://hellorayereport.azurewebsites.net";
+            spItems.Children.Add(platform7);
         }
 
         private void Platform_OnClicked(string url)
